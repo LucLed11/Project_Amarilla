@@ -1,0 +1,190 @@
+#grilla{
+    display: grid;
+    height: 90vh;
+    grid-template-areas: 
+    "header" "section" "footer";
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: auto;
+}
+
+.border{
+    background: rgb(1,0,36);
+    padding: 0%;
+    margin: 0%;
+}
+
+.header{
+    grid-area: header;  
+}
+
+.section{
+    grid-area: section;
+    align-self: center;
+}
+
+.footer{
+    grid-area: footer; 
+    font-size: 50% ;
+}
+
+.border_general{
+    box-sizing: border-box;
+    padding: 0% 2.5%; 
+    font-family:'Poppins', sans-serif;
+    color: white;
+    font-size: 100%;
+    src:url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,700&display=swap')
+}
+
+.center{
+    border-radius: 5px;
+    text-align:right;
+    padding-right: 40%;
+    margin-bottom: 15px;
+}
+
+.logo{
+    display: flex;
+    flex: content;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo_img {
+    image-rendering: optimizeQuality;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 3%;
+}
+
+.logoaux {
+    image-rendering: optimizeQuality;
+    float: right;
+    width: 125px;
+    height: 75px;
+
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    padding-bottom: 0%;
+    font-size: 120%;
+    text-decoration: underline;
+} 
+
+.panel a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 70%;
+    height: 30%;
+    border-collapse: collapse;
+    border: 3px solid rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+}
+  
+table th {
+    background-color: rgb(7, 4, 39);
+}
+
+.filaimpar {
+    background-color: rgb(11, 11, 56)
+}
+
+.mainmenubtn {
+    background-color: rgb(23, 24, 24);
+    color: white;
+    border: double rgb(0, 0, 0);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+
+    
+}
+
+.btnsec{
+    background-color: rgb(23, 24, 24);
+    color: white;
+    border: double rgb(0, 0, 0);
+    cursor: pointer;
+    width: auto;
+    height: auto;
+
+}
+
+.menubtn {
+    box-sizing: content-box;
+    background-color: rgb(23, 24, 24);
+    color: white;
+    border: double rgb(0, 0, 0);
+    cursor: pointer;
+    align-content: center;
+    
+}
+
+.mainmenubtn:hover {
+    background: rgb(62, 70, 182);
+}
+
+.btnsec:hover {
+    background-color: rgb(62, 70, 182);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown2{
+    display: none;
+    background-color: rgb(27, 28, 48);
+    min-width: 200px;
+    
+}
+
+.dropdown2 a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown2 {
+    display: block;
+    background-color: rgb(19, 9, 48);
+}
+
+@media screen and (min-width: 2000px) {
+    #grilla{
+    height: 50vh;
+    grid-template-rows: min-content;
+    }
+    
+    .logo_img {
+        image-rendering: optimizeQuality;
+        width: 120px;
+        height: 75px;
+        margin-bottom: 3%;
+    }
+
+    .mainmenubtn {
+        background-color: rgb(23, 24, 24);
+        color: white;
+        border: double rgb(0, 0, 0);
+        cursor: pointer;
+        width: auto;
+        height: auto;
+    }
+} 
+
