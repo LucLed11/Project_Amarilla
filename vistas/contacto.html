@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,59 +33,48 @@
 <br>
 <hr>
 <br>    
-
-<section class="border_general">
-        <fieldset class="center">
-        <p>
-        <form action="" method="get">
-            <li>
-                <label for="name">Nombre y Apellido:</label>
-                <input type="text" id="name">
-            </li>
-        </p>
-        <p> 
-            <li>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-            </li>
-        </p>
-        <p>
-            <li>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono">
-            </li>
-        </p>
-        <p>
-                <label for="Sexo">Sexo</label>
-                    <select name="Sexo">
-                        <option value=" "> </option>
-                        <option value="F">Femenino</option>
-                        <option value="M">Masculino</option>
-                        <option value="O">Otro</option>
-                    </select>
-        </p>
-        <p>
-                <label for="mje">Mensaje:</label>
-                    <textarea name="mje" id="mje" cols="40" rows="10"> 
-                    </textarea>    
-        </p>
+<div class="caja_contacto">
+    
+    <section class="border_general">
+        <form class="form-horizontal">
+                
+                <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Nombre:</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Juan Perez">
+             </div>
+                <br>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="juan.perez@gmail.com">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Teléfono:</label>
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="333-333-333">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="mje">Mensaje:</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Escriba su mensaje aquí">    
+                </div>
+                <br>
                 <div class="center__title">
                     <input class="btnsec" type="submit" value="Enviar"/>
                     <input class="btnsec" type="reset" value="Borrar información">
-                </div>  
-        <p>
+                </div> 
+                <br>
                 <div class="center__title"><i>Desea recibir información?</i></div>
-        <br>
+                
                 <div class="center__title">
                     <label for="subsi"><i>Sí</i></label>
                     <input type="checkbox" name="suscripción" id="subsi">
                     <label for="subno"><i>No</i></label>
                     <input type="checkbox" name="suscripción" id="subno">
                 </div>
-        </p>
+                
         </form>
-    </fieldset>    
-</section>
+    </section>
+</div>
     <br>
     <hr>
     <br>
@@ -93,8 +83,9 @@
         <div class="panel">
             <a href="/index.html"><button class="mainmenubtn">Volver a la Página Principal</button></a>
         </div>
+        <br><br><br><br>
     </footer>
-    <br><br><br>
-    
+
+
 </body>
 </html>
