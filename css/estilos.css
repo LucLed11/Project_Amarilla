@@ -1,0 +1,23 @@
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--instagram {
+  background-color: pink; }
+
+.boton, .btn--social {
+  background-color: #3a5795;
+  size: 40px;
+  border: 1px solid black; }
+
+.btn--social {
+  background-color: red;
+  color: grey; }
+
+.box {
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 40%;
+  margin-bottom: 15px; }
