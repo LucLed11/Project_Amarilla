@@ -52,9 +52,12 @@
 
 .logo{
     display: flex;
-    flex: content;
     justify-content: center;
     align-content: center;
+    margin: 20%;
+    border-style: solid;
+    border-radius: 2%;
+    border-width: 10%;
 }
 
 .logo_img {
@@ -65,6 +68,9 @@
     animation-name: logo_aparecer;
     animation-duration: 2s;
     animation-iteration-count:initial;
+    border-style: solid;
+    border-radius: 2%;
+    border-width: 10%;
 }
 
 .logoaux {
